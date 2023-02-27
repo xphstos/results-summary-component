@@ -1,0 +1,28 @@
+@use "./functions" as *;
+
+%headerTitle {
+  font-weight: 700;
+  font-size: fluid-rem(1.125rem, 1.5rem);
+  line-height: 1;
+}
+
+%graphScore {
+  font-weight: 800;
+  font-size: fluid-rem(3.5rem, 4.5rem, 540 1440);
+  line-height: 1;
+}
+
+%scoreTitle {
+  font-weight: 700;
+  font-size: fluid-rem(1.5rem, 2rem);
+  line-height: 1;
+}
+
+%scoreDescription {
+  font-size: fluid-rem(1rem, 1.125rem, 540 1440);
+}
+
+%summarTitle {
+  font-weight: 700;
+  font-size: fluid-rem(1.125rem, 1.5rem);
+}

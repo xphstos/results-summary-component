@@ -1,0 +1,22 @@
+{
+  "name": "results-summary-component",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "rimraf .parcel-cache dist/",
+    "start": "parcel --no-cache src/index.html",
+    "serve": "http-server -p 1337 dist -c-1",
+    "prebuild": "rimraf .parcel-cache dist/",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.8.3",
+    "parcel": "^2.8.3",
+    "postcss": "^8.4",
+    "postcss-logical": "^6.1.0",
+    "postcss-media-minmax": "^5.0.0",
+    "posthtml-include": "^1.7.4",
+    "posthtml-inline-svg": "^0.2.0",
+    "rimraf": "^4.1.2"
+  }
+}

@@ -1,0 +1,13 @@
+@use "./functions" as *;
+@forward "./fonts";
+@forward "./variables";
+@forward "./reset";
+@forward "./external";
+@forward "./custom_defaults";
+@forward "./typography";
+
+body {
+  font: 500 fluid-rem(1rem, 1.125rem) / 1.333 "Hanken Grotesk", sans-serif;
+}
+
+@import "./project";

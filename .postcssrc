@@ -1,0 +1,6 @@
+{
+  "plugins": {
+    "postcss-logical": {},
+    "postcss-media-minmax": {}
+  }
+}

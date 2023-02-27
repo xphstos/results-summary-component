@@ -1,0 +1,16 @@
+@use "./colors" as *;
+@use "./settings" as *;
+
+// Project Variables
+:root {
+	@each $name, $color in $colors {
+		--#{$name}: #{$color};
+	}
+
+	// Containers
+	--container: #{$container}px;
+
+	// zIndeces
+	--z-menu: 2000;
+	--z-toggler: 4000;
+}

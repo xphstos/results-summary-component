@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="./assets/scss/style.scss" />
+  </head>
+  <body>
+    <article class="results">
+      <header class="results__header">
+        <h1 class="results__title">Your Result</h1>
+        <p class="results-score__graph">
+          <strong>76</strong>
+          <span>of 100</span>
+        </p>
+        <p class="results-score__title">Great</p>
+        <p class="results-score__description">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </header>
+      <div class="results-summary">
+        <h2 class="results-summary__title">Summary</h2>
+        <ul class="summary-categories">
+          <li
+            class="summary-categories__item summary-category summary-category--reaction"
+          >
+            <icon
+              src="./assets/images/icon-reaction.svg"
+              class="summary-category__icon"
+            ></icon>
+            <h3 class="summary-category__name">Reaction</h3>
+            <p class="summary-category__value"><strong>80</strong> / 100</p>
+          </li>
+          <li
+            class="summary-categories__item summary-category summary-category--memory"
+          >
+            <icon
+              src="./assets/images/icon-memory.svg"
+              class="summary-category__icon"
+            ></icon>
+            <h3 class="summary-category__name">Memory</h3>
+            <p class="summary-category__value"><strong>92</strong> / 100</p>
+          </li>
+          <li
+            class="summary-categories__item summary-category summary-category--verbal"
+          >
+            <icon
+              src="./assets/images/icon-verbal.svg"
+              class="summary-category__icon"
+            ></icon>
+            <h3 class="summary-category__name">Verbal</h3>
+            <p class="summary-category__value"><strong>61</strong> / 100</p>
+          </li>
+          <li
+            class="summary-categories__item summary-category summary-category--visual"
+          >
+            <icon
+              src="./assets/images/icon-visual.svg"
+              class="summary-category__icon"
+            ></icon>
+            <h3 class="summary-category__name">Visual</h3>
+            <p class="summary-category__value"><strong>72</strong> / 100</p>
+          </li>
+        </ul>
+        <button type="button" class="btn">Continue</button>
+      </div>
+    </article>
+  </body>
+</html>
