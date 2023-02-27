@@ -6,23 +6,30 @@
 
 body {
   display: grid;
+  align-items: start;
   min-height: 100vh;
   min-height: 100dvh;
-  padding: max(0px, min(2rem, calc((100vw - 1rem - 100%) * 9999)));
+  padding: max(0rem, min(2rem, calc((100vw - 1rem - 100%) * 9999)))
+    max(0rem, min(2rem, calc((100vw - 1rem - 100%) * 9999))) 2.5rem
+    max(0rem, min(2rem, calc((100vw - 1rem - 100%) * 9999)));
 }
 
 .results {
-  margin: auto;
-  border-radius: max(0px, min(2rem, calc((100vw - 1rem - 100%) * 9999)))
-    max(0px, min(2rem, calc((100vw - 1rem - 100%) * 9999))) 2rem 2rem;
+  border-radius: max(0rem, min(2rem, calc((100vw - 1rem - 100%) * 9999)))
+    max(0rem, min(2rem, calc((100vw - 1rem - 100%) * 9999))) 2rem 2rem;
   display: grid;
+
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   background-color: v("white");
   box-shadow: 0 1rem 2rem v("neutral-100");
 
+  @media (width > 543px) {
+    margin: auto;
+  }
+
   &__header {
     border-radius: inherit;
-    padding: fluid-rem(2rem, 2.5rem, 540 1440);
+    padding: fluid-rem(2rem, 2.5rem, 543 1440);
     color: v("neutral-200");
     background-image: linear-gradient(v("grad-1-1"), v("grad-1-2"));
     text-align: center;
@@ -35,14 +42,14 @@ body {
 .results-score {
   &__graph {
     aspect-ratio: 1 / 1;
-    width: fluid-rem(8.75rem, 12.5rem, 540 1440);
-    height: fluid-rem(8.75rem, 12.5rem, 540 1440);
+    width: fluid-rem(8.75rem, 12.5rem, 543 1440);
+    height: fluid-rem(8.75rem, 12.5rem, 543 1440);
     border-radius: 100%;
     display: grid;
     place-content: center;
     background-image: linear-gradient(v("grad-2-1"), v("grad-2-2"));
     margin-inline: auto;
-    margin-block: fluid-rem(1.75rem, 2.5rem, 540 1440);
+    margin-block: fluid-rem(1.75rem, 2.5rem, 543 1440);
 
     strong {
       @extend %graphScore;
