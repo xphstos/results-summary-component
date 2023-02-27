@@ -8,13 +8,13 @@ body {
   display: grid;
   min-height: 100vh;
   min-height: 100dvh;
-  padding: fluid-rem(0rem, 2rem, 540 1440);
+  padding: max(0px, min(2rem, calc((100vw - 1rem - 100%) * 9999)));
 }
 
 .results {
   margin: auto;
-  border-radius: fluid-rem(0rem, 2rem, 540 1440) fluid-rem(0rem, 2rem, 540 1440)
-    2rem 2rem;
+  border-radius: max(0px, min(2rem, calc((100vw - 1rem - 100%) * 9999)))
+    max(0px, min(2rem, calc((100vw - 1rem - 100%) * 9999))) 2rem 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   background-color: v("white");
